@@ -48,7 +48,26 @@ public class K9 extends LinearOpMode {
             MotorRight.setPower(right);
 
 
-            if ()
+            if (gamepad1.a) // If the A button is pressed
+            {
+                Grabber.setPosition(0.8); // Set the grabber to the closed position
+                //System.out.println("The A button was pressed, and the grabber closed.");
+            }
+            if (gamepad1.b)
+            {
+                Grabber.setPosition(0.0+0.8); // Set the grabber to the open position
+                //System.out.println("The B button was pressed, and the grabber opened.");
+            }
+            if (gamepad1.x)
+            {
+                Arm.setPosition(0.88); // Set the arm to the dropped position
+                //System.out.println("The X button was pressed, and the arm dropped.");
+            }
+            if (gamepad1.y)
+            {
+               Arm.setPosition(0.3); // Set the arm to the lifted position
+                //System.out.println("The Y button was pressed, and the arm lifted.");
+            }
 
 
             idle();
