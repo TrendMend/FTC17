@@ -18,7 +18,7 @@ import com.qualcomm.robotcore.util.RobotLog;
  */
 
 
-@TeleOp (name = "TeleopTankFIXED2", group = "test")
+@TeleOp (name = "K9", group = "K9")
 
 //@disabled
 public class K9 extends LinearOpMode {
